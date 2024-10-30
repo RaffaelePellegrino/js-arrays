@@ -14,6 +14,19 @@ const reversedTeachers = null;
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
-const longNames = null;
 
+
+function mutazioneArr(teachers, x) {
+  const longNames= [];
+  for(let i = 0; i < teachers.length; i++){
+    if (teachers[i].length >= x){
+      longNames.push(teachers[i]);
+    }
+  }
+  return longNames;
+ }
+
+ const longNames = mutazioneArr(teachers, 5)
+
+ console.log(longNames)
 // 3. Rimuovi 'Ed' dall'array teachers
