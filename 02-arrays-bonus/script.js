@@ -30,3 +30,16 @@ function mutazioneArr(teachers, x) {
 
  console.log(longNames)
 // 3. Rimuovi 'Ed' dall'array teachers
+
+function eliminaElemento(teachers, elemento) {
+  for(let i = 0; i < teachers.length; i++){
+    if (teachers[i] === elemento){
+      teachers.splice(i, 1)
+    }
+  }
+  return teachers;
+}
+ho creato una nuova lista per comodità 
+let listWithout = eliminaElemento(teachers, 'Ed')
+
+console.log(listWithout)
