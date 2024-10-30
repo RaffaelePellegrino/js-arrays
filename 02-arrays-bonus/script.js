@@ -39,7 +39,7 @@ function eliminaElemento(teachers, elemento) {
   }
   return teachers;
 }
-ho creato una nuova lista per comodità 
+
 let listWithout = eliminaElemento(teachers, 'Ed')
 
 console.log(listWithout)
